@@ -1,0 +1,40 @@
+
+	
+
+	
+
+	h1{
+		text-align: center;
+		color: gold;
+	
+	}
+		
+	
+		
+	
+	
+	img{
+		float: left;
+		margin-right: 15px;
+	}
+	nav {
+		    margin-top: 300px;
+    		display: flex;
+    
+		
+    
+	}
+		
+	nav a{
+
+		/*display: block;
+		width: 200px;*/
+		/*color:black;*/
+		font-size: 30px;
+		/*text-decoration: none;*/
+	}
+	
+
+	
+		}
+	

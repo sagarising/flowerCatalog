@@ -1,0 +1,34 @@
+make a folder name FlowerCat
+make four web pages :::::
+*index.html
+*flower_1.htm
+*flower_2.htm
+*guest.htm
+
+now we need three css files ::::::
+*for index.html
+*for flower pages
+*for guest book page
+
+we will have to make layout for each of the page.
+We will choose the exact colour and images as provided in .odt file
+
+
+
+we also need script.js file :::::
+*for writing function that will run on  clicking form button
+
+CSS for flowervase button on index.html:::::::
+*It should hide for 2 secs when clicked
+	It means we have to assign a function that will run when image is clicked.
+	Write a function which can do so.
+
+*guest page should have a form. and when the submit button is clicked a javscript function has to invoked which can append the text as entered in the form in the visiting list. 
+
+
+*flower pages should have a link which can download .pdf file with the contents about the flower. We have to find out a way how to do so. We can give the link of pdf file and hope it is automatically downloaded.
+
+
+
+
+						
