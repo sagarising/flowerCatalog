@@ -2,10 +2,20 @@
 <head>
 	<title>FCW</title>
 	<link rel="stylesheet" type="text/css" href="mystyle.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	function disp(){
+		document.getElementById("anim").style.visibility="hidden";
+		 setTimeout(function(){
+		 	document.getElementById("anim").style.visibility="visible";
+		 }, 2000);
+	}
+
+	</script>
+	
 </head>
 
 <body>
+	
 	<hr>
 	<h1>Flower Catalog</h1>
 	<hr>
@@ -13,16 +23,13 @@
 	<img width="1100px" height="700px" src="homeimg.jpg">
 	<nav >
 		<ul>
-		<li><a href="javascript:void(0)">Abeliophyllum</a></li>
-		<li><a href="javascript:void(0)">Ageratum</a></li>
-		<img src="waterJar.gif" style="display:block;">
-		<a href="javascript:void(0)">Guest Book</a>
+		<li><a href="flower_1.htm">Abeliophyllum</a></li>
+		<li><a href="flower_2.htm">Ageratum</a></li>
+		<img onclick="disp()" src="waterJar.gif" id="anim" style="display:block;">
+		<a href="guest.htm">Guest Book</a>
 		</ul>
 	</nav>
 
-	<!-- <footer>
-	Copyright &copy; Y R U Reading DIS <br>
-	This site is best viewed on Chrome Version 46.0.2490.80 (64-bit)
-	</footer> -->
+	
 </body>
 </html>

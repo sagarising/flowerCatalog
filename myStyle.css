@@ -8,10 +8,6 @@
 		color: gold;
 	
 	}
-		
-	
-		
-	
 	
 	img{
 		float: left;
@@ -20,11 +16,13 @@
 	nav {
 		    margin-top: 300px;
     		display: flex;
-    
-		
-    
 	}
 		
+	section{
+		margin-top: 530px;
+		font-size: 20px;
+	}
+
 	nav a{
 
 		/*display: block;
@@ -36,5 +34,5 @@
 	
 
 	
-		}
+	
 	
