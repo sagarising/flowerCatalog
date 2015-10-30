@@ -21,7 +21,7 @@ var reqHandler=function(req,res){
 		 data=matched.toString().replace(/\+/g," ");
 		 var dataWithDate=listOfGuest(data);
 		 var dataAsArray=fs.readFileSync("./guest.htm","utf-8").split("\n");
-		 dataAsArray.splice(28,0,dataWithDate);
+		 dataAsArray.splice(21,0,dataWithDate);
 		 datatowrite=dataAsArray.join("\n");
 		 fs.writeFileSync("./guest.htm",datatowrite);
 		 var datafromfile = fs.readFileSync("./guest.htm");
