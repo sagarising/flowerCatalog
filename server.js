@@ -18,14 +18,13 @@ var reqHandler=function(req,res){
 	console.log(req.url);
 	if(req.url[1]=="?"){
 		 var matched=req.url.match(/=[^&]*/g).map(function(ele){return ele.slice(1)});
-		 data=matched.toString().replace(/\+/g," ");
+		 var data=matched.toString().replace(/[+%]/g," ")+"\n";
 		 var dataWithDate=listOfGuest(data);
-		 var dataAsArray=fs.readFileSync("./guest.htm","utf-8").split("\n");
-		 dataAsArray.splice(21,0,dataWithDate);
-		 datatowrite=dataAsArray.join("\n");
-		 fs.writeFileSync("./guest.htm",datatowrite);
-		 var datafromfile = fs.readFileSync("./guest.htm");
-		 res.write(datafromfile);
+		fs.appendFileSync("./comments.txt",dataWithDate);
+		 var dataFromHtml = fs.readFileSync("./guest.htm","utf-8").split("\n");
+		 var dataToInsert=fs.readFileSync("./comments.txt","utf-8").split("\n").reverse();
+		 dataFromHtml.splice(21,0,dataToInsert.join(""));
+		 res.write(dataFromHtml.join("\n"));
 		 res.end()
 	}
 
